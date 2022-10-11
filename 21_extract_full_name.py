@@ -1,3 +1,5 @@
+from operator import itemgetter
+
 def extract_full_names(people):
     """Return list of names, extracting from first+last keys in people dicts.
 
@@ -14,3 +16,10 @@ def extract_full_names(people):
         >>> extract_full_names(names)
         ['Ada Lovelace', 'Grace Hopper']
     """
+    list_names = []
+
+    for person in people:
+        first, last = itemgetter("first", "last")(person)
+        list_names.append(f"{first} {last}")
+
+    return list_names

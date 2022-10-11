@@ -1,3 +1,5 @@
+
+
 def sum_floats(nums):
     """Return sum of floating point numbers in nums.
     
@@ -11,3 +13,8 @@ def sum_floats(nums):
     # hint: to find out if something is a float, you should use the
     # "isinstance" function --- research how to use this to find out
     # if something is a float!
+
+
+    floats = [num for num in nums if isinstance(num, float)]
+    
+    return sum(floats)

@@ -46,7 +46,7 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
     else:
         raise ValueError("Invalid Operation")
 
-    if(make_int):
+    if (make_int):
         return f"{message} {int(result)}"
     else:
         return f"{message} {result}"

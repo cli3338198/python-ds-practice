@@ -46,8 +46,6 @@ def list_manipulation(lst, command, location, value=None):
             return lst.pop()
         elif location == "beginning":
             return lst.pop(0)
-        else:
-            return None
 
     elif command == "add":
         if location == "end":
@@ -57,6 +55,3 @@ def list_manipulation(lst, command, location, value=None):
         else:
             return None
         return lst
-
-    else:
-        return None

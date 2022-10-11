@@ -23,13 +23,16 @@ def is_palindrome(phrase):
     """
 
     phrase = phrase.lower().replace(" ", "")
-    left = 0
-    right = len(phrase) - 1
+    return phrase == phrase[::-1]
 
-    while left < right:
-        if phrase[left] != phrase[right]:
-            return False
-        left += 1
-        right -= 1
+    # phrase = phrase.lower().replace(" ", "")
+    # left = 0
+    # right = len(phrase) - 1
 
-    return True
+    # while left < right:
+    #     if phrase[left] != phrase[right]:
+    #         return False
+    #     left += 1
+    #     right -= 1
+
+    # return True

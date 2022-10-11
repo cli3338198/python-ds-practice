@@ -14,7 +14,9 @@ def single_letter_count(word, letter):
     lower_case_word = word.lower()
     lower_case_letter = letter.lower()
 
-    return len([ltr for ltr in lower_case_word if ltr == lower_case_letter])
+    return lower_case_word.count(lower_case_letter)
+
+    # return len([ltr for ltr in lower_case_word if ltr == lower_case_letter])
 
     # count = 0
     # for ltr in lower_case_word:

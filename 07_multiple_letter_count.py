@@ -11,9 +11,16 @@ def multiple_letter_count(phrase):
     freq = {}
 
     for ltr in phrase:
-        if ltr not in freq:
-            freq[ltr] = 1
-        else:
-            freq[ltr] += 1
+        freq[ltr] = freq.get(ltr, 0) + 1
 
     return freq
+
+    # freq = {}
+
+    # for ltr in phrase:
+    #     if ltr not in freq:
+    #         freq[ltr] = 1
+    #     else:
+    #         freq[ltr] += 1
+
+    # return freq
